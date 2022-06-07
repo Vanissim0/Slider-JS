@@ -7,8 +7,8 @@
   <title>Карточки | Проект </title>
 </head>
 <body>
-<div class="container">
-  <div
+<div class="container" id="back">
+  <div 
       class="slide"
       style="background: url('img/ivan-rudoy-H1CzGhDhSAY-unsplash.jpg');">
     <h3>Classic</h3>
@@ -36,6 +36,22 @@
   </div>
 </div>
 
+
 <script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="vanta.net.min.js"></script>
+<script>
+  VANTA.NET({
+  el: "#back",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+})
+</script>
+
 </body>
 </html>
